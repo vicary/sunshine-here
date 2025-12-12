@@ -2,7 +2,7 @@ import { define } from "../utils.ts";
 
 export default define.page(function Home() {
   return (
-    <div class="fresh-gradient full-screen">
+    <div class="main-gradient full-screen">
       <div
         style={{
           display: "flex",

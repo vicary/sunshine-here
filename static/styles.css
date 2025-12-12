@@ -39,7 +39,7 @@ html {
   justify-content: center;
 }
 
-.fresh-gradient {
+.main-gradient {
   background-color: rgb(254, 243, 199);
   background-image: linear-gradient(
     to bottom,
