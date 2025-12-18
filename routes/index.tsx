@@ -1,5 +1,4 @@
-import { t } from "../i18n.ts";
-import { define } from "../utils.ts";
+import { define, t } from "../utils.ts";
 
 export default define.page(function Home({ state }) {
   const { lang } = state;
@@ -112,7 +111,7 @@ export default define.page(function Home({ state }) {
           {t(lang, "contactTitle")}
         </h2>
         <div class="flex flex-col items-center gap-6 max-w-lg mx-auto mb-8">
-          <div class="flex items-start gap-4 bg-white px-6 py-5 rounded-xl shadow-sm w-full sm:w-auto sm:min-w-[360px]">
+          <div class="flex items-start gap-4 bg-white px-6 py-5 rounded-xl shadow-sm w-full sm:w-90">
             <i class="fa-solid fa-envelope text-2xl text-amber-600 mt-1"></i>
             <div class="flex flex-col">
               <strong class="text-sm text-stone-500 mb-1">
@@ -126,7 +125,7 @@ export default define.page(function Home({ state }) {
               </a>
             </div>
           </div>
-          <div class="flex items-start gap-4 bg-white px-6 py-5 rounded-xl shadow-sm w-full sm:w-auto sm:min-w-[360px]">
+          <div class="flex items-start gap-4 bg-white px-6 py-5 rounded-xl shadow-sm w-full sm:w-90">
             <i class="fa-solid fa-location-dot text-2xl text-amber-600 mt-1">
             </i>
             <div class="flex flex-col">
