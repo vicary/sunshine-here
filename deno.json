@@ -2,21 +2,24 @@
   "nodeModulesDir": "auto",
   "tasks": {
     "check": "deno fmt --check . && deno lint . && deno check",
-    "dev": "deno run -A --watch=static/,routes/ dev.ts",
-    "build": "deno run -A dev.ts build",
+    "dev": "vite",
+    "build": "vite build",
     "start": "deno serve -A _fresh/server.js",
     "update": "deno run -A -r jsr:@fresh/update .",
-    "preview": "deno run -A main.ts"
+    "preview": "deno serve -A _fresh/server.js"
   },
   "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "exclude": ["**/_fresh/*"],
   "imports": {
-    "fresh": "jsr:@fresh/core@^2.0.0-alpha.60",
-    "preact": "https://esm.sh/preact@10.22.0",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
-    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
-    "preact/": "https://esm.sh/preact@10.22.0/",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1"
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
+    "@preact/signals": "npm:@preact/signals@^2.5.1",
+    "@std/http": "jsr:@std/http@^1.0.22",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.18",
+    "fresh": "jsr:@fresh/core@^2.2.0",
+    "preact": "npm:preact@^10.28.0",
+    "preact/": "npm:/preact@^10.28.0/",
+    "tailwindcss": "npm:tailwindcss@^4.1.18",
+    "vite": "npm:vite@^7.3.0"
   },
   "compilerOptions": {
     "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],

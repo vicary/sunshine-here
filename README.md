@@ -1,24 +1,16 @@
-# Fresh project
+# Sunshine Here
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+Corporate website for **Sunshine Here Limited** — a Hong Kong-based consultancy
+offering destiny consultation, feng shui arrangement, and tax planning services.
 
-### Usage
+## Development
 
-Make sure to install Deno:
-https://docs.deno.com/runtime/getting_started/installation
-
-Then start the project in development mode:
-
-```
+```bash
 deno task dev
 ```
 
-This will watch the project directory and restart as necessary.
+## Tech Stack
 
-
-### Clone and deploy
-
-Deploy your own version of this example with a couple of clicks
-
-[![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/denoland/examples&path=with-fresh)
+- [Deno](https://deno.com)
+- [Fresh 2.0](https://fresh.deno.dev)
+- [Tailwind CSS](https://tailwindcss.com)
